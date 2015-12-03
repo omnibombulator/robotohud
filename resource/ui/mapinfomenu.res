@@ -1,0 +1,353 @@
+"Resource/UI/MapInfoMenu.res"
+{
+	"mapinfo"
+	{
+		"ControlName"	"Frame"
+		"fieldName"		"mapinfo"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"0"
+		"wide"			"f0"
+		"tall"			"480"
+		"autoResize"	"1"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"bgcolor_override"	"0"
+		"paintbackground"	"0"
+	}
+	
+	"MapHeader"
+	{
+		"ControlName"		"EditablePanel"
+		"fieldName"		"MapHeader"
+		"xpos"			"c-160"
+		"ypos"			"c-100"
+		"zpos"			"1"
+		"wide"			"320"
+		"tall"			"20"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"bgcolor_override"		"PanelTop"
+		"paintbackgroundtype"	"0"
+	}
+	
+	"MapBG"
+	{
+		"ControlName"		"EditablePanel"
+		"fieldName"		"MapBG"
+		"xpos"			"c-160"
+		"ypos"			"c-100"
+		"zpos"			"-1"
+		"wide"			"320"
+		"tall"			"200"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"bgcolor_override"		"250 250 250 255"
+		//"bgcolor_override"		"113 113 113 255"
+		"paintbackgroundtype"	"0"
+	}
+	
+	"MapShadow"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"MapShadow"
+		"xpos"			"c-160"
+		"ypos"			"c100"
+		"zpos"			"-2"
+		"wide"			"320"
+		"tall"			"10"
+		"visible"		"1"
+		"enabled"		"1"
+		"scaleImage"	"1"
+		"image"			"replay/thumbnails/bottom_shadow"
+	}
+	
+	"MapInfoTitle"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"MapInfoTitle"
+		"xpos"			"c-160"
+		"ypos"			"c-100"
+		"zpos"			"3"
+		"wide"			"320"
+		"tall"			"20"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"%mapname%"
+		"textAlignment"	"west"
+		"font"			"RobotoBold14"
+		"fgcolor"		"TheBlack"
+		"textinsetx"	"25"
+	}
+	
+	"MapInfoType"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"MapInfoType"
+		"xpos"			"c-160"
+		"ypos"			"c-100"
+		"zpos"			"2"
+		"wide"			"320"
+		"tall"			"20"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"%gamemode%"
+		"textAlignment"	"east"
+		"textinsetx"	"25"
+		"font"			"Roboto12"
+		"fgcolor"		"TheBlack"
+	}	
+	
+	"MapInfoText"
+	{
+		"ControlName"	"CExRichText"
+		"fieldName"		"MapInfoText"
+		"font"			"Roboto12"
+		"xpos"			"c-150"
+		"ypos"			"c-75"
+		"zpos"			"3"
+		"wide"			"310"
+		"tall"			"170"
+		"autoResize"	"3"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"paintborder"	"0"
+		"textAlignment"	"northwest"
+		"fgcolor"		"113 113 113 255"
+	}
+	
+	"MapImage"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"MapImage"
+		"xpos"			"9999"
+		"ypos"			"75"
+		"zpos"			"2"
+		"wide"			"275"
+		"tall"			"275"
+		"visible"		"0"
+		"enabled"		"1"
+		"image"			""
+		"scaleImage"	"1"		
+	}
+
+	"MapInfoContinue" [$WIN32]
+	{
+		"ControlName"	"CExButton"
+		"fieldName"		"MapInfoContinue"
+		"xpos"			"c85"
+		"ypos"			"c103"
+		"zpos"			"6"
+		"wide"			"75"
+		"tall"			"17"
+		"autoResize"	"0"
+		"pinCorner"		"2"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"#TF_Continue"
+		"textAlignment"	"center"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"command"		"continue"
+		"default"		"1"
+		"font"			"robotobold12"
+		
+		"fgcolor"		"TheWhite"
+		"fgcolor_override"	"TheWhite"
+		
+		"border_default"	"noborder"
+		"border_armed"		"noborder"
+		"paintbackground"	"1"
+		"paintbackgroundtype"	"0"
+		"paintborder"		"0"
+		
+		"defaultFgColor_override" "250 250 250 255"
+		"armedFgColor_override" "250 250 250 255"
+		"depressedFgColor_override" "250 250 250 255"
+		
+		"defaultBgColor_override" "62 80 180 255"
+		"armedBgColor_override" "47 62 158 255"
+		"depressedBgColor_override" "62 80 180 255"
+	}
+	
+	"OkShadow"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"OkShadow"
+		"xpos"			"c85"
+		"ypos"			"c119"
+		"zpos"			"-2"
+		"wide"			"75"
+		"tall"			"10"
+		"visible"		"1"
+		"enabled"		"1"
+		"scaleImage"	"1"
+		"image"			"replay/thumbnails/bottom_shadow"
+	}
+	
+	"MapInfoWatchIntro" [$WIN32]
+	{
+		"ControlName"	"CExButton"
+		"fieldName"		"MapInfoWatchIntro"
+		"xpos"			"9999"
+		"ypos"			"r40"
+		"zpos"			"6"
+		"wide"			"150"
+		"tall"			"30"
+		"autoResize"	"0"
+		"pinCorner"		"2"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"#TF_WatchIntro"
+		"textAlignment"	"center"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"command"		"intro"
+		"default"		"1"
+		"font"			"MenuSmallFont"
+		"fgcolor"		"Black"
+	}
+	
+	"MapInfoBack" [$WIN32]
+	{
+		"ControlName"	"CExButton"
+		"fieldName"		"MapInfoBack"
+		"xpos"			"c-159"
+		"ypos"			"c103"
+		"zpos"			"6"
+		"wide"			"75"
+		"tall"			"17"
+		"autoResize"	"0"
+		"pinCorner"		"2"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"#TF_Back"
+		"textAlignment"	"center"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"command"		"back"
+		"font"			"robotobold12"
+		"fgcolor"		"TheWhite"
+		"fgcolor_override"	"TheWhite"
+		
+		"border_default"	"noborder"
+		"border_armed"		"noborder"
+		"paintbackground"	"1"
+		"paintbackgroundtype"	"0"
+		"paintborder"		"0"
+		
+		"defaultFgColor_override" "250 250 250 255"
+		"armedFgColor_override" "250 250 250 255"
+		"depressedFgColor_override" "250 250 250 255"
+		
+		"defaultBgColor_override" "62 80 180 255"
+		"armedBgColor_override" "47 62 158 255"
+		"depressedBgColor_override" "62 80 180 255"
+	}
+	
+	"BackShadow"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"BackShadow"
+		"xpos"			"c-159"
+		"ypos"			"c119"
+		"zpos"			"-2"
+		"wide"			"75"
+		"tall"			"10"
+		"visible"		"1"
+		"enabled"		"1"
+		"scaleImage"	"1"
+		"image"			"replay/thumbnails/bottom_shadow"
+	}
+	
+	"MenuBG"
+	{
+		"ControlName"	"CModelPanel"
+		"fieldName"		"MenuBG"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"0"		
+		"wide"			"f0"
+		"tall"			"480"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"0"
+		"enabled"		"1"
+		"fov"			"20"
+		
+		"model"
+		{
+			"modelname"	"models/vgui/UI_welcome01_screen.mdl"
+			"skin"		"0"
+			"angles_x" "0"
+			"angles_y" "180"
+			"angles_z" "0"
+			"origin_x" "290"
+			"origin_x_lodef" "320"
+			"origin_x_hidef" "310"
+			"origin_y" "0"
+			"origin_z" "-39"
+		}
+	}					
+
+	"ShadedBar"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"ShadedBar"
+		"xpos"			"9999"
+		"ypos"			"9999"
+		"zpos"			"5"
+		"wide"			"0"
+		"tall"			"0"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"0"
+		"enabled"		"1"
+		"tabPosition"	"0"	
+		"image"			"loadout_bottom_gradient"
+		"tileImage"		"1"
+		"PaintBackgroundType"	"0"
+	}	
+
+	"Footer" [$X360]
+	{
+		"ControlName"		"CTFFooter"
+		"fieldName"			"Footer"
+		"zpos"				"6"
+		"tall"				"80"
+		"button_separator"	"10"
+		"button_separator_lodef"	"5"
+		"buttongap"			"50"
+		"textadjust"		"3"
+		"buttonoffsety"		"20"
+		"buttonoffsety_hidef"		"0"
+		"buttonoffsety_lodef"		"18"
+		"fonttext"			"MatchmakingDialogMenuLarge"
+		"fonttext_lodef"			"MatchmakingDialogMenuSmall"
+		"fgcolor"			"HudOffWhite" 	
+		
+		"button"
+		{
+			"name"		"intro"
+			"text"		"#TF_WatchIntro_360"
+			"icon"		"#GameUI_Icons_Y_BUTTON"	
+		}
+		
+		"button"
+		{
+			"name"		"continue"
+			"text"		"#TF_Continue_360"
+			"icon"		"#GameUI_Icons_A_BUTTON"	
+		}
+	}	
+}
